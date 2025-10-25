@@ -315,7 +315,7 @@ Other           50 mins     ░░░░░░░░░░░░░░░░    
 
 ### Contribution Visualization
 <!-- Enable via GitHub Actions: Platane/snk -->
-![Snake animation](https://raw.githubusercontent.com/rafeeqinea/rafeeqinea/output/github-contribution-grid-snake-dark.svg)
+![3D Skyline](https://raw.githubusercontent.com/rafeeqinea/rafeeqinea/main/skyline.gif)
 
 </details>
 
