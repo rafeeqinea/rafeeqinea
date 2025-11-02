@@ -1,6 +1,6 @@
 <div align="center">
 
-# Rafeeq Inea
+# Rafeeq
 
 **AI Systems Engineer | Deep Learning Researcher**
 
