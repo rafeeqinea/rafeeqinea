@@ -1,16 +1,17 @@
 <div align="center">
 
-# Rafeeq
+# Mohammed Rafeeq Faraaz Shaik
 
-**AI Systems Engineer | Deep Learning Researcher**
+**Machine Learning Research Engineer**  
+*Scientific Machine Learning & Numerical Methods*
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=800&lines=Building+AI+systems+from+mathematical+foundations;Systems+programming+in+C+and+Python;Focused+on+interpretability+and+performance)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=800&lines=Graph+Neural+Networks+for+Large-Scale+Optimization;Hybrid+ML-Solver+Systems+for+Physical+Simulations;Building+Numerical+Foundations+from+First+Principles)](https://git.io/typing-svg)
 
 <br/>
 
 [![GitHub](https://img.shields.io/badge/GitHub-rafeeqinea-181717?style=flat-square&logo=github)](https://github.com/rafeeqinea)
 [![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail)](mailto:rafeeqinea@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/mohammed-rafeeq-faraaz-shaik-2a1b29249/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/mohammed-rafeeq-faraaz-shaik/)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=rafeeqinea&style=flat-square&color=grey)
 
@@ -18,53 +19,65 @@
 
 ---
 
-## About
+## Research Focus
 
-**BSc Computer Science** @ University of Greenwich (Year 3) | **42 Piscine Graduate**
+My work lies at the intersection of **machine learning** and **scientific computing**. I develop and implement hybrid ML-solver systems to accelerate the optimization of large-scale physical models, particularly those described by Partial Differential Equations (PDEs). My primary focus is on using **Graph Neural Networks (GNNs)** to learn and replace core components of classical numerical solvers, aiming to reduce convergence time while preserving the rigorous accuracy guarantees required for engineering and scientific applications.
 
-I build AI systems from first principles with a focus on understanding every layer of the stack. My work emphasizes clean implementations, mathematical rigor, and production-ready code. Currently developing a neural network engine in pure Python while maintaining proficiency in systems programming through C.
-
-**Research Interests:** Deep learning architectures, automatic differentiation, optimization algorithms, systems-level ML
-
-**Open to:** Research collaborations, internship opportunities, technical discussions
+I am driven by a first-principles approach, building a deep understanding of the mathematical foundations of both neural networks and the numerical methods they are designed to enhance.
 
 ---
 
-## Current Work
+## Primary Research: AI-Enhanced Numerical Solvers
 
-### Neural Network Engine
-**[deep-learning-from-scratch](https://github.com/rafeeqinea/deep-learning-from-scratch)**
+This is the focus of my final year dissertation, proposed for the **£9m Research England-funded M³4Impact programme**. The project investigates a hybrid ML framework to accelerate iterative PDE solvers through two primary thrusts:
 
-Building a neural network framework from mathematical foundations in pure Python. This project emphasizes understanding over abstraction.
+1.  **2D CNN Warm-Starting:** A U-Net architecture is trained to predict a high-quality initial solution for the 2D Poisson equation, which is then fed into a Conjugate Gradient solver to reduce iteration counts.
+2.  **3D GNN-in-the-Loop Preconditioning:** A Graph Neural Network is embedded within an Algebraic Multigrid (AMG) preconditioner, learning to replace the heuristic interpolation operator. The GNN is trained "in-the-loop" by backpropagating gradients through the Preconditioned Conjugate Gradient (PCG) solver to directly minimize the final residual.
 
-**Implementation Progress:**
-- ✅ Matrix operations and tensor manipulation
-- ✅ Forward propagation with multiple activation functions
-- ✅ Automatic differentiation engine
-- 🔄 Backpropagation optimization
-- 🔄 Optimizer suite (SGD, Adam, RMSprop)
-- 📋 Convolutional layers
+**Core Methodologies:**
+-   Solver-in-the-Loop Training
+-   Graph Neural Networks on Unstructured Meshes
+-   Hybrid ML-Numerical Methods
+-   Large-Scale System Optimization
 
-**Technical Focus:** Numerical stability, computational efficiency, clean abstractions
-
-**Stack:** Python, NumPy, Matplotlib
+**Technical Stack:** Python, PyTorch, PyTorch Geometric, FEniCS, SciPy, NumPy
 
 ---
 
-## Projects
+## Selected Implementations
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Deep Learning from Scratch
-**[Repository](https://github.com/rafeeqinea/deep-learning-from-scratch)**
+### Neural Network Foundations
+**[Repository](https://github.com/rafeeqinea/neural-network-foundations)**
 
-Neural network framework built from mathematical foundations in pure Python. Implements forward/backward propagation, automatic differentiation, and multiple optimization algorithms.
+A neural network framework built from first principles in Python and NumPy. Implements all core components, including layers, activation functions, loss, and a full backpropagation engine to demonstrate a foundational understanding of the underlying mathematics.
 
 **Stack:** Python, NumPy, Matplotlib
 
-**Focus:** Understanding every layer of neural network computation
+</td>
+<td width="50%" valign="top">
+
+### BlockSense Analytics
+**[Repository](https://github.com/rafeeqinea/BlockSense-Analytics)**
+
+A real-time analytics pipeline that ingests blockchain data via Web3.py, models it as a transaction graph using NetworkX, and applies Scikit-learn models for anomaly detection. A practical application of ML on large, heterogeneous graph-structured data.
+
+**Stack:** Python, Web3.py, Scikit-learn, NetworkX
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Distributed Java Chat System
+**[Repository](https://github.com/rafeeqinea/Java-CLI-Chat-System)**
+
+A multi-client distributed chat server demonstrating core distributed systems principles. Implemented from scratch in Java using Sockets and Threads, featuring coordinator logic, leader election for failover, and robust design patterns (Singleton, Factory, Observer).
+
+**Stack:** Java, Sockets, Threads, JUnit
 
 </td>
 <td width="50%" valign="top">
@@ -72,89 +85,9 @@ Neural network framework built from mathematical foundations in pure Python. Imp
 ### Stock Market Forecasting using GRU
 **[Repository](https://github.com/rafeeqinea/Stock-Market-Forecasting-using-GRU)**
 
-Time-series forecasting system using Gated Recurrent Units for stock price prediction. Includes data preprocessing, hyperparameter tuning, and comprehensive evaluation.
+A time-series forecasting system using a Gated Recurrent Unit (GRU) network in TensorFlow to predict stock prices. Includes data preprocessing, hyperparameter tuning, and performance evaluation pipelines.
 
-**Stack:** Python, TensorFlow/Keras, Pandas
-
-**Focus:** Applying deep learning to financial time-series data
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### BlockSense Analytics
-**[Repository](https://github.com/rafeeqinea/blocksense)**
-
-Real-time blockchain analytics platform with ML-powered anomaly detection. Monitors transaction patterns and identifies suspicious activity across Ethereum and BSC networks.
-
-**Stack:** Python, Web3.py, Scikit-learn
-
-**Focus:** Security intelligence for blockchain transactions
-
-</td>
-<td width="50%" valign="top">
-
-### BlockSense dApp
-**[Repository](https://github.com/rafeeqinea/blocksense-dapp)**
-
-Decentralized application that reads and displays real-time data from BlockSense's data feeds. Features wallet connection and dark mode interface.
-
-**Stack:** JavaScript, Web3, React
-
-**Focus:** User-friendly blockchain data visualization
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### London Underground System
-**[Repository](https://github.com/rafeeqinea/London-Underground-System)**
-
-Graph-based transport network simulation implementing Dijkstra's shortest-path algorithm on real Transport for London data for optimal journey planning.
-
-**Stack:** Python, NetworkX, Pandas
-
-**Focus:** Practical graph theory applications
-
-</td>
-<td width="50%" valign="top">
-
-### SAIL to CGEN Compiler
-**[Repository](https://github.com/rafeeqinea/SAIL-to-CGEN-Coding-Challenge)**
-
-Converter that transforms structured YAML/JSON data into LISP-style S-expressions. Part of a coding challenge demonstrating parsing and code generation.
-
-**Stack:** Python, YAML, JSON
-
-**Focus:** Data structure transformation and parsing
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### Supermarket Queue Simulation
-**[Repository](https://github.com/rafeeqinea/Supermarket-Checkout-Lane-Queue-Simulation)**
-
-Object-oriented simulation system modeling supermarket checkout lanes with dynamic queue management and customer flow optimization.
-
-**Stack:** Python, OOP
-
-**Focus:** Discrete event simulation and queue theory
-
-</td>
-<td width="50%" valign="top">
-
-### Palindrome Prime Counter
-**[Repository](https://github.com/rafeeqinea/Palindrome-Prime-Number-Counter)**
-
-Optimized algorithm to efficiently find and count palindromic prime numbers within large ranges, demonstrating algorithm optimization techniques.
-
-**Stack:** Python
-
-**Focus:** Algorithm optimization and number theory
+**Stack:** Python, TensorFlow, Pandas
 
 </td>
 </tr>
@@ -162,60 +95,21 @@ Optimized algorithm to efficiently find and count palindromic prime numbers with
 
 ---
 
-## Technical Skills
+## Academic & Research Interests
 
-<div align="center">
-
-**Core Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-**AI/ML Stack**
-
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-
-**Development Tools**
-
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)
-![Vim](https://img.shields.io/badge/Vim-019733?style=flat-square&logo=vim&logoColor=white)
-
-</div>
+-   **Scientific Machine Learning:** Hybrid physics-ML models, neural operators, physics-informed neural networks (PINNs).
+-   **Geometric Deep Learning:** Graph Neural Networks, equivariant architectures, applications on unstructured meshes.
+-   **Numerical Methods & Optimization:** Iterative solvers (CG, PCG), preconditioning (AMG), automatic differentiation, convex and non-convex optimization.
+-   **Core Machine Learning:** Foundational theory, interpretability, systems-level performance.
 
 ---
 
-## Development Philosophy
+## Technical Skills
 
-```python
-class Approach:
-    """My development methodology"""
-    
-    principles = {
-        "clarity": "Code should be self-documenting",
-        "performance": "Profile before optimizing",
-        "testing": "Write tests for critical paths",
-        "iteration": "Ship incrementally, gather feedback"
-    }
-    
-    @staticmethod
-    def evaluate(code):
-        """Quality checks before shipping"""
-        assert is_readable(code), "Readability is paramount"
-        assert has_tests(code), "Test critical functionality"
-        assert is_maintainable(code), "Future you will thank you"
-        return code
-```
-
-**Core Principles:**
-- **Understand deeply:** If you can't explain it simply, keep learning
-- **Measure always:** Profile before optimization, benchmark after
-- **Document clearly:** Code tells how, comments tell why
-- **Ship iteratively:** Feedback beats perfection in isolation
+-   **Languages:** Python, C, Java, JavaScript, SQL, Bash
+-   **Machine Learning:** PyTorch, PyTorch Geometric, TensorFlow, Scikit-learn, NumPy, SciPy, Pandas
+-   **Scientific Computing:** FEniCS, Matplotlib, NetworkX
+-   **Developer Tools:** Git, Docker, Linux, VS Code, IntelliJ, PyCharm, Makefile
 
 ---
 
@@ -225,109 +119,7 @@ class Approach:
 
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=rafeeqinea&show_icons=true&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub Stats" />
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=rafeeqinea&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=C9D1D9" alt="Streak Stats" />
-
 <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafeeqinea&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" />
 <img width="49%" src="https://github-readme-activity-graph.vercel.app/graph?username=rafeeqinea&theme=github-compact&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=C9D1D9" alt="Contribution Graph" />
-
-</div>
-
----
-
-## Development Roadmap
-
-```mermaid
-%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#1a1a1a','primaryTextColor':'#fff','primaryBorderColor':'#58A6FF','lineColor':'#58A6FF','secondaryColor':'#0D1117','tertiaryColor':'#161B22'}}}%%
-gantt
-    title Q4 2025 Development Timeline
-    dateFormat YYYY-MM-DD
-    
-    section Deep Learning
-    Linear Algebra & Calculus    :done,    2025-09-01, 2025-09-24
-    Probability & Statistics      :active,  2025-09-25, 2025-10-15
-    Automatic Differentiation     :         2025-10-16, 2025-11-10
-    Backpropagation Engine        :         2025-11-11, 2025-11-25
-    Optimization Algorithms       :         2025-11-26, 2025-12-05
-    Convolutional Networks        :         2025-12-06, 2025-12-31
-    
-    section Systems Programming
-    Data Structures in C          :         2025-10-20, 2025-11-20
-    Advanced Algorithms           :         2025-11-05, 2025-11-25
-    UNIX System Calls             :         2025-11-26, 2025-12-20
-    
-    section Research & Writing
-    Technical Documentation       :         2025-10-01, 2025-12-31
-    Research Paper Reading        :         2025-10-01, 2025-12-31
-```
-
-**Current Phase:** Mathematical foundations and implementation of core neural network components
-
-**Next Milestones:**
-- Complete backpropagation optimization (Nov 2025)
-- Implement CNN layers (Dec 2025)
-- Publish technical writeups on implementation challenges
-
----
-
-## Collaboration
-
-I'm interested in working with researchers, engineers, and teams focused on:
-
-**Research Areas:**
-- Neural network interpretability
-- Optimization algorithms
-- Systems-level machine learning
-- Educational tools for ML concepts
-
-**Project Types:**
-- Open source ML frameworks
-- Performance optimization challenges
-- Research implementations
-- Production ML systems
-
-**What I Offer:**
-- Strong mathematical foundation in ML
-- Systems programming expertise
-- Clean, well-documented code
-- Collaborative approach to problem-solving
-
-**Contact:**
-- Email: rafeeqinea@gmail.com
-- GitHub: [@rafeeqinea](https://github.com/rafeeqinea)
-- LinkedIn: [Mohammed Rafeeq Faraaz Shaik](https://www.linkedin.com/in/mohammed-rafeeq-faraaz-shaik-2a1b29249/)
-
----
-
-<details>
-<summary><b>Extended Analytics</b></summary>
-
-<br/>
-
-### Weekly Coding Activity
-<!--START_SECTION:waka-->
-```
-Python      12 hrs 34 mins  ████████████░░░░░   60%
-C            4 hrs 12 mins  ████░░░░░░░░░░░░   20%
-Markdown     2 hrs 5 mins   ██░░░░░░░░░░░░░░   10%
-JavaScript   1 hr 15 mins   █░░░░░░░░░░░░░░░    6%
-Other           50 mins     ░░░░░░░░░░░░░░░░    4%
-```
-<!--END_SECTION:waka-->
-
-### Contribution Visualization
-<!-- Enable via GitHub Actions: Platane/snk -->
-![3D Skyline](https://raw.githubusercontent.com/rafeeqinea/rafeeqinea/main/skyline.gif)
-
-</details>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a1a,100:2d2d2d&height=100&section=footer" />
-
-**© 2025 Rafeeq Inea** • Open to collaboration and opportunities
-
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github)](https://github.com/rafeeqinea)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail)](mailto:rafeeqinea@gmail.com)
 
 </div>
