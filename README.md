@@ -2,10 +2,10 @@
 
 # Mohammed Rafeeq Faraaz Shaik
 
-**Machine Learning Research Engineer**  
-*Scientific Machine Learning & Numerical Methods*
+**Computer Science Student**  
+*Machine learning, numerical methods and systems*
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=800&lines=Graph+Neural+Networks+for+Large-Scale+Optimization;Hybrid+ML-Solver+Systems+for+Physical+Simulations;Building+Numerical+Foundations+from+First+Principles)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=4000&pause=1000&color=FFFFFF&center=true&vCenter=true&width=800&lines=Neural+networks+from+first+principles;Hybrid+ML+and+numerical+solvers;Graph+and+grid+based+systems)](https://git.io/typing-svg)
 
 <br/>
 
@@ -19,28 +19,32 @@
 
 ---
 
-## Research Focus
+## Direction
 
-My work lies at the intersection of **machine learning** and **scientific computing**. I develop and implement hybrid ML-solver systems to accelerate the optimization of large-scale physical models, particularly those described by Partial Differential Equations (PDEs). My primary focus is on using **Graph Neural Networks (GNNs)** to learn and replace core components of classical numerical solvers, aiming to reduce convergence time while preserving the rigorous accuracy guarantees required for engineering and scientific applications.
+I am a final year BSc Computer Science student exploring the intersection of **machine learning** and **scientific computing**.
 
-I am driven by a first-principles approach, building a deep understanding of the mathematical foundations of both neural networks and the numerical methods they are designed to enhance.
+My work so far has focused on:
+
+- building neural networks from first principles in NumPy  
+- learning how classical numerical solvers behave on real problems  
+- preparing to combine both in hybrid ML–solver systems for PDE based models  
+
+The goal is simple: understand the maths well enough to trust the code, then use that to step into serious research.
 
 ---
 
-## Primary Research: AI-Enhanced Numerical Solvers
+## Current Focus – AI Enhancement of Numerical Solvers
 
-This is the focus of my final year dissertation, proposed for the **£9m Research England-funded M³4Impact programme**. The project investigates a hybrid ML framework to accelerate iterative PDE solvers through two primary thrusts:
+My final year dissertation at the University of Greenwich investigates how learned components can speed up traditional PDE solvers.
 
-1.  **2D CNN Warm-Starting:** A U-Net architecture is trained to predict a high-quality initial solution for the 2D Poisson equation, which is then fed into a Conjugate Gradient solver to reduce iteration counts.
-2.  **3D GNN-in-the-Loop Preconditioning:** A Graph Neural Network is embedded within an Algebraic Multigrid (AMG) preconditioner, learning to replace the heuristic interpolation operator. The GNN is trained "in-the-loop" by backpropagating gradients through the Preconditioned Conjugate Gradient (PCG) solver to directly minimize the final residual.
+**Working plan:**
 
-**Core Methodologies:**
--   Solver-in-the-Loop Training
--   Graph Neural Networks on Unstructured Meshes
--   Hybrid ML-Numerical Methods
--   Large-Scale System Optimization
+- start from classical iterative methods on simple 2D problems  
+- build clean baselines with SciPy style solvers  
+- add neural modules as warm starts or preconditioners  
+- measure iteration counts, residuals and wall clock time against the baselines  
 
-**Technical Stack:** Python, PyTorch, PyTorch Geometric, FEniCS, SciPy, NumPy
+This project is aligned with the M³4Impact numerical modelling programme and is my main step toward future work in scientific machine learning.
 
 ---
 
@@ -51,9 +55,10 @@ This is the focus of my final year dissertation, proposed for the **£9m Researc
 <td width="50%" valign="top">
 
 ### Neural Network Foundations
-**[Repository](https://github.com/rafeeqinea/neural-network-foundations)**
+**[Repository](https://github.com/rafeeqinea/neural-network-foundations)**  
 
-A neural network framework built from first principles in Python and NumPy. Implements all core components, including layers, activation functions, loss, and a full backpropagation engine to demonstrate a foundational understanding of the underlying mathematics.
+Neural network framework built from first principles in Python and NumPy.  
+Implements core components – layers, activations, loss, backpropagation and training loops – with manual gradient checks and experiments on MNIST.
 
 **Stack:** Python, NumPy, Matplotlib
 
@@ -61,11 +66,11 @@ A neural network framework built from first principles in Python and NumPy. Impl
 <td width="50%" valign="top">
 
 ### BlockSense Analytics
-**[Repository](https://github.com/rafeeqinea/BlockSense-Analytics)**
+**[Repository](https://github.com/rafeeqinea/BlockSense-Analytics)**  
 
-A real-time analytics pipeline that ingests blockchain data via Web3.py, models it as a transaction graph using NetworkX, and applies Scikit-learn models for anomaly detection. A practical application of ML on large, heterogeneous graph-structured data.
+Real time analytics pipeline that ingests blockchain data via Web3.py, models it as a transaction graph using NetworkX and applies Scikit learn models for anomaly detection.
 
-**Stack:** Python, Web3.py, Scikit-learn, NetworkX
+**Stack:** Python, Web3.py, Scikit learn, NetworkX
 
 </td>
 </tr>
@@ -73,21 +78,21 @@ A real-time analytics pipeline that ingests blockchain data via Web3.py, models 
 <td width="50%" valign="top">
 
 ### Distributed Java Chat System
-**[Repository](https://github.com/rafeeqinea/Java-CLI-Chat-System)**
+**[Repository](https://github.com/rafeeqinea/Java-CLI-Chat-System)**  
 
-A multi-client distributed chat server demonstrating core distributed systems principles. Implemented from scratch in Java using Sockets and Threads, featuring coordinator logic, leader election for failover, and robust design patterns (Singleton, Factory, Observer).
+Multi client distributed chat server implemented from scratch in Java using sockets and threads, with coordinator logic, basic leader election and private messaging.
 
-**Stack:** Java, Sockets, Threads, JUnit
+**Stack:** Java, sockets, threads, JUnit
 
 </td>
 <td width="50%" valign="top">
 
 ### Stock Market Forecasting using GRU
-**[Repository](https://github.com/rafeeqinea/Stock-Market-Forecasting-using-GRU)**
+**[Repository](https://github.com/rafeeqinea/Stock-Market-Forecasting-using-GRU)**  
 
-A time-series forecasting system using a Gated Recurrent Unit (GRU) network in TensorFlow to predict stock prices. Includes data preprocessing, hyperparameter tuning, and performance evaluation pipelines.
+Time series forecasting model using a GRU network in TensorFlow to predict stock prices, including data preprocessing, training and evaluation.
 
-**Stack:** Python, TensorFlow, Pandas
+**Stack:** Python, TensorFlow, pandas
 
 </td>
 </tr>
@@ -95,25 +100,23 @@ A time-series forecasting system using a Gated Recurrent Unit (GRU) network in T
 
 ---
 
-## Academic & Research Interests
+## Interests
 
--   **Scientific Machine Learning:** Hybrid physics-ML models, neural operators, physics-informed neural networks (PINNs).
--   **Geometric Deep Learning:** Graph Neural Networks, equivariant architectures, applications on unstructured meshes.
--   **Numerical Methods & Optimization:** Iterative solvers (CG, PCG), preconditioning (AMG), automatic differentiation, convex and non-convex optimization.
--   **Core Machine Learning:** Foundational theory, interpretability, systems-level performance.
+- **Scientific machine learning** – hybrid physics and ML, solver aware models  
+- **Geometric deep learning** – graph neural networks on meshes and networks  
+- **Numerical methods** – iterative solvers, preconditioning, optimisation  
+- **Systems** – C, UNIX, simple distributed systems, practical performance  
 
 ---
 
 ## Technical Skills
 
--   **Languages:** Python, C, Java, JavaScript, SQL, Bash
--   **Machine Learning:** PyTorch, PyTorch Geometric, TensorFlow, Scikit-learn, NumPy, SciPy, Pandas
--   **Scientific Computing:** FEniCS, Matplotlib, NetworkX
--   **Developer Tools:** Git, Docker, Linux, VS Code, IntelliJ, PyCharm, Makefile
+- **Languages:** Python, C, Java, JavaScript, SQL, Bash  
+- **ML and data:** PyTorch, TensorFlow, Scikit learn, NumPy, SciPy, pandas  
+- **Scientific and graph:** FEniCS, Matplotlib, NetworkX  
+- **Tools:** Git, Docker, Linux, VS Code, IntelliJ, PyCharm, Makefile  
 
 ---
-
-## GitHub Analytics
 
 <div align="center">
 
