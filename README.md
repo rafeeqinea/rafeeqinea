@@ -66,7 +66,7 @@ Implements core components – layers, activations, loss, backpropagation and tr
 <td width="50%" valign="top">
 
 ### BlockSense Analytics
-**[Repository](https://github.com/rafeeqinea/BlockSense-Analytics)**  
+**[Repository]([https://github.com/rafeeqinea/BlockSense-Analytics](https://github.com/rafeeqinea/blocksense))**  
 
 Real time analytics pipeline that ingests blockchain data via Web3.py, models it as a transaction graph using NetworkX and applies Scikit learn models for anomaly detection.
 
